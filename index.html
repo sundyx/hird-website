@@ -1,391 +1,10 @@
-<!--<!DOCTYPE html>-->
-<!--<html lang="en">-->
-<!--<head>-->
-<!--    <meta charset="utf-8">-->
-<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-<!--    <link rel="shortcut icon" href="style/images/logo.png">-->
-<!--    <title>HIRD | Electronic cattle monitoring system</title>-->
-<!--    <link rel="stylesheet" type="text/css" href="style/css/bootstrap.min.css">-->
-<!--    <link rel="stylesheet" type="text/css" href="style/css/plugins.css">-->
-<!--    <link rel="stylesheet" type="text/css" href="style/revolution/css/settings.css">-->
-<!--    <link rel="stylesheet" type="text/css" href="style/revolution/css/layers.css">-->
-<!--    <link rel="stylesheet" type="text/css" href="style/revolution/css/navigation.css">-->
-<!--    <link rel="stylesheet" type="text/css" href="style/type/type.css">-->
-<!--    <link rel="stylesheet" type="text/css" href="style.css">-->
-<!--    <link rel="stylesheet" type="text/css" href="style/css/color/leaf.css">-->
-<!--    <link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i,600,600i,700,700i&display=swap"-->
-<!--          rel="stylesheet">-->
-<!--    <link rel="stylesheet" type="text/css" href="style/css/font/font2.css">-->
-<!--</head>-->
-<!--<body>-->
-<!--<div class="content-wrapper">-->
-<!--    <nav class="navbar absolute transparent inverse-text navbar-hover-opacity navbar navbar-expand-lg">-->
-<!--        <div class="container">-->
-<!--            &lt;!&ndash; <div class="navbar-brand" href="#">Navbar</div> &ndash;&gt;-->
-<!--            <div class="navbar-brand"><a href="index.html"><img src="style/images/logo-light.png" width="30"-->
-<!--                                                                height="30"></a></div>-->
-<!--            <div class="navbar-other ml-auto order-lg-3">-->
-<!--                <ul class="navbar-nav flex-row align-items-center" data-sm-skip="true">-->
-<!--                    <li class="nav-item">-->
-<!--                        <div class="navbar-hamburger d-lg-none d-xl-none ml-auto">-->
-<!--                            <button class="hamburger animate plain" data-toggle="offcanvas-nav"><span></span></button>-->
-<!--                        </div>-->
-<!--                    </li>-->
-
-<!--                    &lt;!&ndash;                    <li class="nav-item">&ndash;&gt;-->
-<!--                    &lt;!&ndash;                        <button class="plain" data-toggle="offcanvas-info"><i class="jam jam-info"></i></button>&ndash;&gt;-->
-<!--                    &lt;!&ndash;                    </li>&ndash;&gt;-->
-<!--                </ul>-->
-<!--                &lt;!&ndash; /.navbar-nav &ndash;&gt;-->
-<!--            </div>-->
-<!--            &lt;!&ndash; /.navbar-other &ndash;&gt;-->
-<!--            <div class="navbar-collapse offcanvas-nav">-->
-<!--                <div class="offcanvas-header d-lg-none d-xl-none">-->
-<!--                    <a href="index.html"><img src="#"-->
-<!--                                              srcset="style/images/logo-light.png 1x, style/images/logo-light@2x.png 2x"-->
-<!--                                              alt=""/></a>-->
-<!--                    &lt;!&ndash;                    <button class="plain offcanvas-close offcanvas-nav-close"><i class="jam jam-close"></i></button>&ndash;&gt;-->
-<!--                </div>-->
-<!--                <ul class="navbar-nav ml-auto">-->
-<!--                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>-->
-<!--                    <li class="nav-item"><a class="nav-link" href="about.html">Product</a></li>-->
-<!--                    <li class="nav-item"><a class="nav-link " href="ourteam.html">About Us</a></li>-->
-<!--                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>-->
-<!--                </ul>-->
-<!--                &lt;!&ndash; /.navbar-nav &ndash;&gt;-->
-<!--            </div>-->
-<!--            &lt;!&ndash; /.navbar-collapse &ndash;&gt;-->
-<!--        </div>-->
-<!--        &lt;!&ndash; /.container &ndash;&gt;-->
-<!--    </nav>-->
-<!--    &lt;!&ndash; /.navbar &ndash;&gt;-->
-<!--    &lt;!&ndash; /.offcanvas-info &ndash;&gt;-->
-<!--    <div class="wrapper dark-wrapper">-->
-<!--        <div class="rev_slider_wrapper fullscreen-container">-->
-<!--            <div id="slider" class="rev_slider fullscreenbanner" data-version="5.4.7">-->
-<!--                <ul>-->
-<!--                    <li data-transition="fade" data-thumb=""><img src="style/images/art/droneshot1.jpg" alt=""/>-->
-<!--                        <div class="tp-caption font-weight-500 color-white text-center"-->
-<!--                             data-x="center"-->
-<!--                             data-y="middle"-->
-<!--                             data-voffset="['-100','-100','-90','-70']"-->
-<!--                             data-fontsize="['65','65','50','35']"-->
-<!--                             data-lineheight="['80','80','65','50']"-->
-<!--                             data-width="['800','800','600','340']"-->
-<!--                             data-textAlign="['center','center','center','center']"-->
-<!--                             data-whitespace="['normal','normal','normal','normal']"-->
-<!--                             data-frames='[{"delay":1000,"speed":1200,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'-->
-<!--                             data-responsive="on"-->
-<!--                             data-responsive_offset="on" style="z-index: 9;">Designed With Ranchers In Mind-->
-<!--                        </div>-->
-<!--                        &lt;!&ndash; /.tp-caption &ndash;&gt;-->
-<!--                        <div class="tp-caption font-weight-400 color-white text-center"-->
-<!--                             data-x="center"-->
-<!--                             data-y="middle"-->
-<!--                             data-voffset="['25','25','25','25']"-->
-<!--                             data-fontsize="['26','26','26','20']"-->
-<!--                             data-lineheight="['36','36','36','30']"-->
-<!--                             data-width="['800','800','680','300']"-->
-<!--                             data-textAlign="['center','center','center','center']"-->
-<!--                             data-whitespace="['normal','normal','normal','normal']"-->
-<!--                             data-frames='[{"delay":1500,"speed":1200,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'-->
-<!--                             data-responsive="on"-->
-<!--                             data-responsive_offset="on" style="z-index: 9;"> Combining state of the art technology with-->
-<!--                            tried and true methods-->
-
-<!--                        </div>-->
-<!--                        &lt;!&ndash; /.tp-caption &ndash;&gt;-->
-<!--                        <a class="tp-caption btn btn-l btn-white btn-strong-hover scroll"-->
-<!--                           data-x="center"-->
-<!--                           data-y="middle"-->
-<!--                           data-voffset="['115','115','115','115']"-->
-<!--                           data-width="['auto','auto','auto','auto']"-->
-<!--                           data-textAlign="['center','center','center','center']"-->
-<!--                           data-frames='[{"delay":2000,"speed":1200,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'-->
-<!--                           data-responsive="on"-->
-<!--                           data-responsive_offset="on" style="z-index: 9;" href="about.html">See Product-->
-<!--                        </a>-->
-<!--                        &lt;!&ndash; /.tp-caption &ndash;&gt;-->
-<!--                    </li>-->
-<!--                    <li data-transition="fade" data-thumb=""><img src="style/images/art/cowbackground.jpg" alt=""/>-->
-<!--                        <div class="tp-caption font-weight-500 color-white text-center"-->
-<!--                             data-x="center"-->
-<!--                             data-y="middle"-->
-<!--                             data-voffset="['-85','-85','-85','-95']"-->
-<!--                             data-fontsize="['65','65','50','35']"-->
-<!--                             data-lineheight="['80','80','65','50']"-->
-<!--                             data-width="['900','900','680','340']"-->
-<!--                             data-textAlign="['center','center','center','center']"-->
-<!--                             data-whitespace="['normal','normal','normal','normal']"-->
-<!--                             data-frames='[{"delay":1000,"speed":1200,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'-->
-<!--                             data-responsive="on"-->
-<!--                             data-responsive_offset="on" style="z-index: 9;">Saving Time and Saving Cows-->
-
-<!--                        </div>-->
-<!--                        &lt;!&ndash; /.tp-caption &ndash;&gt;-->
-<!--                        <div class="tp-caption font-weight-400 color-white text-center"-->
-<!--                             data-x="center"-->
-<!--                             data-y="middle"-->
-<!--                             data-voffset="['0','0','0','0']"-->
-<!--                             data-fontsize="['26','26','26','20']"-->
-<!--                             data-lineheight="['36','36','36','30']"-->
-<!--                             data-width="['900','900','680','340']"-->
-<!--                             data-textAlign="['center','center','center','center']"-->
-<!--                             data-whitespace="['normal','normal','normal','normal']"-->
-<!--                             data-frames='[{"delay":1500,"speed":1200,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'-->
-<!--                             data-responsive="on"-->
-<!--                             data-responsive_offset="on" style="z-index: 9;">Get more done and rest easy, knowing your-->
-<!--                            herd is being watched over-->
-
-<!--                        </div>-->
-<!--                        &lt;!&ndash; /.tp-caption &ndash;&gt;-->
-<!--                        <a class="tp-caption btn btn-l btn-white btn-strong-hover scroll"-->
-<!--                           data-x="center"-->
-<!--                           data-y="middle"-->
-<!--                           data-voffset="['90','90','90','90']"-->
-<!--                           data-width="['auto','auto','auto','auto']"-->
-<!--                           data-textAlign="['center','center','center','center']"-->
-<!--                           data-frames='[{"delay":2000,"speed":1200,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'-->
-<!--                           data-responsive="on"-->
-<!--                           data-responsive_offset="on" style="z-index: 9;" href="ourteam.html">About Us </a>-->
-<!--                        &lt;!&ndash; /.tp-caption &ndash;&gt;-->
-<!--                </ul>-->
-<!--            </div>-->
-<!--            &lt;!&ndash; /.wrapper &ndash;&gt;-->
-<!--            <div class="wrapper light-wrapper">-->
-<!--                <div class="container pb-50">-->
-<!--                    &lt;!&ndash; /.owl-carousel &ndash;&gt;-->
-<!--                    <div class="space140"></div>-->
-<!--                    <h3 class="display-3 text-center"> HIRD isn’t just a drone. It’s a service.</h3>-->
-<!--                    <div class="space40"></div>-->
-<!--                    <div class="row text-center">-->
-<!--                        <div class="col-md-6 col-lg-4">-->
-<!--                            <div class="box bg-white shadow shadow-hover">-->
-<!--                                <div class="icon icon-svg mb-20"><img src="style/images/icons/hs-24-hours-1.png"-->
-<!--                                                                      alt=""/></div>-->
-<!--                                <h5>24/7 Support</h5>-->
-<!--                                <p>hit us up for a good time</p>-->
-<!--                            </div>-->
-<!--                            &lt;!&ndash;/.box &ndash;&gt;-->
-<!--                        </div>-->
-<!--                        &lt;!&ndash;/column &ndash;&gt;-->
-<!--                        <div class="col-md-6 col-lg-4">-->
-<!--                            <div class="box bg-white shadow shadow-hover">-->
-<!--                                <div class="icon icon-svg mb-20"><img src="style/images/icons/st-payment-method.png"-->
-<!--                                                                      alt=""/></div>-->
-<!--                                <h5>Secure Payments</h5>-->
-<!--                                <p>give us money pls </p>-->
-<!--                            </div>-->
-<!--                            &lt;!&ndash;/.box &ndash;&gt;-->
-<!--                        </div>-->
-<!--                        &lt;!&ndash;/column &ndash;&gt;-->
-<!--                        <div class="space30 d-none d-md-block d-lg-none"></div>-->
-<!--                        <div class="col-md-6 col-lg-4">-->
-<!--                            <div class="box bg-white shadow shadow-hover">-->
-<!--                                <div class="icon icon-svg mb-20"><img src="style/images/icons/ms-cloud-computing.png"-->
-<!--                                                                      alt=""/></div>-->
-<!--                                <h5>Daily Updates</h5>-->
-<!--                                <p>cow go moo moo</p>-->
-<!--                            </div>-->
-<!--                            &lt;!&ndash;/.box &ndash;&gt;-->
-<!--                        </div>-->
-<!--                        &lt;!&ndash;/column &ndash;&gt;-->
-<!--                        <div class="space30 d-none d-lg-block"></div>-->
-<!--                        <div class="col-md-6 col-lg-4">-->
-<!--                            <div class="box bg-white shadow shadow-hover">-->
-<!--                                <div class="icon icon-svg mb-20"><img src="style/images/icons/of-diagram.png" alt=""/>-->
-<!--                                </div>-->
-<!--                                <h5>Research & Marketing</h5>-->
-<!--                                <p>ben likes writing papers</p>-->
-<!--                            </div>-->
-<!--                            &lt;!&ndash;/.box &ndash;&gt;-->
-<!--                        </div>-->
-<!--                        &lt;!&ndash;/column &ndash;&gt;-->
-<!--                        <div class="space30 d-none d-md-block d-lg-none"></div>-->
-<!--                        <div class="col-md-6 col-lg-4">-->
-<!--                            <div class="box bg-white shadow shadow-hover">-->
-<!--                                <div class="icon icon-svg mb-20"><img src="style/images/icons/sm-setting.png" alt=""/>-->
-<!--                                </div>-->
-<!--                                <h5>System Integration</h5>-->
-<!--                                <p>r u over 58? find singles near you!</p>-->
-<!--                            </div>-->
-<!--                            &lt;!&ndash;/.box &ndash;&gt;-->
-<!--                        </div>-->
-<!--                        &lt;!&ndash;/column &ndash;&gt;-->
-<!--                        <div class="col-md-6 col-lg-4">-->
-<!--                            <div class="box bg-white shadow shadow-hover">-->
-<!--                                <div class="icon icon-svg mb-20"><img src="style/images/icons/de-earth-globe-3.png"-->
-<!--                                                                      alt=""/></div>-->
-<!--                                <h5>yeet</h5>-->
-<!--                                <p>craig forest sucks </p>-->
-<!--                            </div>-->
-<!--                            &lt;!&ndash;/.box &ndash;&gt;-->
-<!--                        </div>-->
-<!--                        &lt;!&ndash;/column &ndash;&gt;-->
-<!--                    </div>-->
-<!--                    &lt;!&ndash; /.container &ndash;&gt;-->
-<!--                    <div class="divider">-->
-<!--                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-opacity-default" preserveAspectRatio="none"-->
-<!--                             viewBox="0 0 1070 53.23">-->
-<!--                            <path d="M0,11.23s114,42,335,22,272-44,416-28,319,37,319,37v11H0Z"/>-->
-<!--                        </svg>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <section id="contact">-->
-<!--                <div class="wrapper light-wrapper">-->
-<!--                    <div class="container inner">-->
-<!--                        <h2 class="section-title">Get in Touch</h2>-->
-<!--                        <p class="lead larger">Have any questions? Reach out to us from our contact form and we will get-->
-<!--                            back to you shortly.</p>-->
-<!--                        <div class="space40"></div>-->
-<!--                        <div class="row">-->
-<!--                            <div class="col-lg-7 order-lg-2 offset-lg-1">-->
-<!--                                <form id="contact-form" class="fields-white" method="post" action="contact/contact.php">-->
-<!--                                    <div class="messages"></div>-->
-<!--                                    <div class="controls">-->
-<!--                                        <div class="form-row">-->
-<!--                                            <div class="col-lg-12 col-xl-6">-->
-<!--                                                <div class="form-group">-->
-<!--                                                    <input id="form_name" type="text" name="name" class="form-control"-->
-<!--                                                           placeholder="First Name *" required="required"-->
-<!--                                                           data-error="First Name is required.">-->
-<!--                                                    <div class="help-block with-errors"></div>-->
-<!--                                                </div>-->
-<!--                                            </div>-->
-<!--                                            <div class="col-lg-12 col-xl-6">-->
-<!--                                                <div class="form-group">-->
-<!--                                                    <input id="form_lastname" type="text" name="surname"-->
-<!--                                                           class="form-control" placeholder="Last Name *"-->
-<!--                                                           required="required" data-error="Last Name is required.">-->
-<!--                                                    <div class="help-block with-errors"></div>-->
-<!--                                                </div>-->
-<!--                                            </div>-->
-<!--                                        </div>-->
-<!--                                        <div class="form-row">-->
-<!--                                            <div class="col-lg-12 col-xl-6">-->
-<!--                                                <div class="form-group">-->
-<!--                                                    <input id="form_email" type="email" name="email"-->
-<!--                                                           class="form-control" placeholder="Email *"-->
-<!--                                                           required="required" data-error="Valid email is required.">-->
-<!--                                                    <div class="help-block with-errors"></div>-->
-<!--                                                </div>-->
-<!--                                            </div>-->
-<!--                                            <div class="col-lg-12 col-xl-6">-->
-<!--                                                <div class="form-group">-->
-<!--                                                    <input id="form_phone" type="tel" name="phone" class="form-control"-->
-<!--                                                           placeholder="Phone">-->
-<!--                                                    <div class="help-block with-errors"></div>-->
-<!--                                                </div>-->
-<!--                                            </div>-->
-<!--                                        </div>-->
-<!--                                        <div class="form-row">-->
-<!--                                            <div class="col-md-12">-->
-<!--                                                <div class="form-group">-->
-<!--                                                    <textarea id="form_message" name="message" class="form-control"-->
-<!--                                                              placeholder="Message *" rows="4" required="required"-->
-<!--                                                              data-error="Message is required."></textarea>-->
-<!--                                                    <div class="help-block with-errors"></div>-->
-<!--                                                </div>-->
-<!--                                            </div>-->
-<!--                                            <div class="col-md-12">-->
-<!--                                                <input type="submit" class="btn btn-send" value="Send message">-->
-<!--                                            </div>-->
-<!--                                        </div>-->
-<!--                                        <div class="form-row">-->
-<!--                                            <div class="col-md-12">-->
-<!--                                                <p class="text-muted"><strong>*</strong> These fields are required.</p>-->
-<!--                                            </div>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                </form>-->
-<!--                                &lt;!&ndash; /form &ndash;&gt;-->
-<!--                            </div>-->
-<!--                            &lt;!&ndash;/column &ndash;&gt;-->
-<!--                            <div class="space30 d-none d-md-block d-lg-none"></div>-->
-<!--                            <div class="col-lg-4">-->
-<!--                            </div>-->
-<!--                            <div class="d-flex flex-row">-->
-
-<!--                                <div class="icon color-default fs-34 mr-25"><i class="icofont-telephone"></i></div>-->
-
-<!--                                <div>-->
-<!--                                    <h6 class="mb-5">Phone</h6>-->
-<!--                                    <p>01 (404) 229 1445‬ <br class="d-none d-md-block"/>01 (912) 429 5649‬</p>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="space30 d-none d-md-block d-lg-none"></div>-->
-<!--                            <div class="d-flex flex-row">-->
-<!--                                <div>-->
-<!--                                    <div class="icon color-default fs-34 mr-25"><i class="icofont-mail-box"></i>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div>-->
-<!--                                    <h6 class="mb-5">E-mail</h6>-->
-<!--                                    <p><a href="mailto:hird.llc@gmail.com" class="nocolor">hird.llc@gmail.com</a>-->
-<!--                                    </p>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        &lt;!&ndash;/column &ndash;&gt;-->
-<!--                    </div>-->
-<!--                    &lt;!&ndash;/.row &ndash;&gt;-->
-<!--                </div>-->
-<!--                &lt;!&ndash; /.container &ndash;&gt;-->
-<!--        </div>-->
-<!--        &lt;!&ndash; /.wrapper &ndash;&gt;-->
-<!--        </section>-->
-<!--        <div class="space60"></div>-->
-<!--        <div class="divider">-->
-<!--            <svg xmlns="http://www.w3.org/2000/svg" class="fill-opacity-default" preserveAspectRatio="none"-->
-<!--                 viewBox="0 0 1070 53.23">-->
-<!--                <path d="M0,11.23s114,42,335,22,272-44,416-28,319,37,319,37v11H0Z"/>-->
-<!--            </svg>-->
-<!--        </div>-->
-<!--        <footer class="bg-opacity-default text-center">-->
-<!--            &lt;!&ndash;      <footer class="dark-wrapper inverse-text text-center">&ndash;&gt;-->
-<!--            <div class="container inner pt-80 pb-80">-->
-<!--                <div class="widget"><img src="#"-->
-<!--                                         srcset="style/images/logo-light.png 1x, style/images/logo-light@2x.png 2x"-->
-<!--                                         alt=""/>-->
-<!--                    <div class="space30"></div>-->
-<!--                    <p>© 2020 HIRD. All rights reserved.</p>-->
-<!--                    <div class="space10"></div>-->
-<!--                    <ul class="social social-mute social-s ml-auto">-->
-<!--                        <li><a href="#"><i class="jam jam-linkedin"></i></a></li>-->
-<!--                    </ul>-->
-<!--                </div>-->
-<!--                &lt;!&ndash; /.widget &ndash;&gt;-->
-<!--            </div>-->
-<!--            &lt;!&ndash; /.container &ndash;&gt;-->
-<!--        </footer>-->
-<!--    </div>-->
-<!--    &lt;!&ndash; /.content-wrapper &ndash;&gt;-->
-<!--    <script src="style/js/jquery.min.js"></script>-->
-<!--    <script src="style/js/popper.min.js"></script>-->
-<!--    <script src="style/js/bootstrap.min.js"></script>-->
-<!--    <script src="style/revolution/js/jquery.themepunch.tools.min.js"></script>-->
-<!--    <script src="style/revolution/js/jquery.themepunch.revolution.min.js"></script>-->
-<!--    <script src="style/revolution/js/extensions/revolution.extension.actions.min.js"></script>-->
-<!--    <script src="style/revolution/js/extensions/revolution.extension.carousel.min.js"></script>-->
-<!--    <script src="style/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>-->
-<!--    <script src="style/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>-->
-<!--    <script src="style/revolution/js/extensions/revolution.extension.migration.min.js"></script>-->
-<!--    <script src="style/revolution/js/extensions/revolution.extension.navigation.min.js"></script>-->
-<!--    <script src="style/revolution/js/extensions/revolution.extension.parallax.min.js"></script>-->
-<!--    <script src="style/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>-->
-<!--    <script src="style/revolution/js/extensions/revolution.extension.video.min.js"></script>-->
-<!--    <script src="style/js/plugins.js"></script>-->
-<!--    <script src="style/js/scripts.js"></script>-->
-<!--</body>-->
-<!--</html>-->
 <!DOCTYPE html>
-<html lang="en" class="h-100">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="style/images/favicon.png">
-    <title>HIRD</title>
+    <link rel="shortcut icon" href="style/images/logo.png">
+    <title>HIRD | Electronic cattle monitoring system</title>
     <link rel="stylesheet" type="text/css" href="style/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style/css/plugins.css">
     <link rel="stylesheet" type="text/css" href="style/revolution/css/settings.css">
@@ -398,80 +17,455 @@
           rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style/css/font/font2.css">
 </head>
-<body class="wrapper image-wrapper bg-image no-overlay h-100" data-image-src="style/images/art/cowbackground.jpg">
-<div class="content-wrapper inverse-text text-center d-flex flex-column justify-content-between h-100">
-    <div class="container inner pt-40 pb-80">
-        <div class="logo"><a href="index.html"><img src="#"
-                                                    srcset="style/images/logo-light.png 1x, style/images/logo-light@2x.png 2x"
-                                                    alt=""/></a></div>
-    </div>
-    <!-- /.container -->
-    <div class="container">
-        <h1 class="hero mb-40">We'll be back shortly!</h1>
-        <p class="lead larger">Our website is under construction. Estimated Time Remaining:</p>
-        <div class="space20"></div>
-        <div class="row">
-            <div class="col-md-8 offset-md-2">
-                <div class="countdown" data-date="June 12 2020">
+<body>
+<div class="content-wrapper">
+    <nav class="navbar absolute transparent inverse-text navbar-hover-opacity navbar navbar-expand-lg">
+        <div class="container">
+            <!-- <div class="navbar-brand" href="#">Navbar</div> -->
+            <div class="navbar-brand"><a href="index.html"><img src="style/images/logo-light.png" width="30"
+                                                                height="30"></a></div>
+            <div class="navbar-other ml-auto order-lg-3">
+                <ul class="navbar-nav flex-row align-items-center" data-sm-skip="true">
+                    <li class="nav-item">
+                        <div class="navbar-hamburger d-lg-none d-xl-none ml-auto">
+                            <button class="hamburger animate plain" data-toggle="offcanvas-nav"><span></span></button>
+                        </div>
+                    </li>
+
+                    <!--                    <li class="nav-item">-->
+                    <!--                        <button class="plain" data-toggle="offcanvas-info"><i class="jam jam-info"></i></button>-->
+                    <!--                    </li>-->
+                </ul>
+                <!-- /.navbar-nav -->
+            </div>
+            <!-- /.navbar-other -->
+            <div class="navbar-collapse offcanvas-nav">
+                <div class="offcanvas-header d-lg-none d-xl-none">
+                    <a href="index.html"><img src="#"
+                                              srcset="style/images/logo-light.png 1x, style/images/logo-light@2x.png 2x"
+                                              alt=""/></a>
+                    <!--                    <button class="plain offcanvas-close offcanvas-nav-close"><i class="jam jam-close"></i></button>-->
+                </div>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Product</a></li>
+                    <li class="nav-item"><a class="nav-link " href="ourteam.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <!-- /.navbar-nav -->
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <!-- /.navbar -->
+    <!-- /.offcanvas-info -->
+    <div class="wrapper dark-wrapper">
+        <div class="rev_slider_wrapper fullscreen-container">
+            <div id="slider" class="rev_slider fullscreenbanner" data-version="5.4.7">
+                <ul>
+                    <li data-transition="fade" data-thumb=""><img src="style/images/art/droneshot1.jpg" alt=""/>
+                        <div class="tp-caption font-weight-500 color-white text-center"
+                             data-x="center"
+                             data-y="middle"
+                             data-voffset="['-100','-100','-90','-70']"
+                             data-fontsize="['65','65','50','35']"
+                             data-lineheight="['80','80','65','50']"
+                             data-width="['800','800','600','340']"
+                             data-textAlign="['center','center','center','center']"
+                             data-whitespace="['normal','normal','normal','normal']"
+                             data-frames='[{"delay":1000,"speed":1200,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+                             data-responsive="on"
+                             data-responsive_offset="on" style="z-index: 9;">Designed With Ranchers In Mind
+                        </div>
+                        <!-- /.tp-caption -->
+                        <div class="tp-caption font-weight-400 color-white text-center"
+                             data-x="center"
+                             data-y="middle"
+                             data-voffset="['25','25','25','25']"
+                             data-fontsize="['26','26','26','20']"
+                             data-lineheight="['36','36','36','30']"
+                             data-width="['800','800','680','300']"
+                             data-textAlign="['center','center','center','center']"
+                             data-whitespace="['normal','normal','normal','normal']"
+                             data-frames='[{"delay":1500,"speed":1200,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+                             data-responsive="on"
+                             data-responsive_offset="on" style="z-index: 9;"> Combining state of the art technology with
+                            tried and true methods
+
+                        </div>
+                        <!-- /.tp-caption -->
+                        <a class="tp-caption btn btn-l btn-white btn-strong-hover scroll"
+                           data-x="center"
+                           data-y="middle"
+                           data-voffset="['115','115','115','115']"
+                           data-width="['auto','auto','auto','auto']"
+                           data-textAlign="['center','center','center','center']"
+                           data-frames='[{"delay":2000,"speed":1200,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                           data-responsive="on"
+                           data-responsive_offset="on" style="z-index: 9;" href="about.html">See Product
+                        </a>
+                        <!-- /.tp-caption -->
+                    </li>
+                    <li data-transition="fade" data-thumb=""><img src="style/images/art/cowbackground.jpg" alt=""/>
+                        <div class="tp-caption font-weight-500 color-white text-center"
+                             data-x="center"
+                             data-y="middle"
+                             data-voffset="['-85','-85','-85','-95']"
+                             data-fontsize="['65','65','50','35']"
+                             data-lineheight="['80','80','65','50']"
+                             data-width="['900','900','680','340']"
+                             data-textAlign="['center','center','center','center']"
+                             data-whitespace="['normal','normal','normal','normal']"
+                             data-frames='[{"delay":1000,"speed":1200,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+                             data-responsive="on"
+                             data-responsive_offset="on" style="z-index: 9;">Saving Time and Saving Cows
+
+                        </div>
+                        <!-- /.tp-caption -->
+                        <div class="tp-caption font-weight-400 color-white text-center"
+                             data-x="center"
+                             data-y="middle"
+                             data-voffset="['0','0','0','0']"
+                             data-fontsize="['26','26','26','20']"
+                             data-lineheight="['36','36','36','30']"
+                             data-width="['900','900','680','340']"
+                             data-textAlign="['center','center','center','center']"
+                             data-whitespace="['normal','normal','normal','normal']"
+                             data-frames='[{"delay":1500,"speed":1200,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+                             data-responsive="on"
+                             data-responsive_offset="on" style="z-index: 9;">Get more done and rest easy, knowing your
+                            herd is being watched over
+
+                        </div>
+                        <!-- /.tp-caption -->
+                        <a class="tp-caption btn btn-l btn-white btn-strong-hover scroll"
+                           data-x="center"
+                           data-y="middle"
+                           data-voffset="['90','90','90','90']"
+                           data-width="['auto','auto','auto','auto']"
+                           data-textAlign="['center','center','center','center']"
+                           data-frames='[{"delay":2000,"speed":1200,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                           data-responsive="on"
+                           data-responsive_offset="on" style="z-index: 9;" href="ourteam.html">About Us </a>
+                        <!-- /.tp-caption -->
+                </ul>
+            </div>
+            <!-- /.wrapper -->
+            <div class="wrapper light-wrapper">
+                <div class="container pb-50">
+                    <!-- /.owl-carousel -->
+                    <div class="space140"></div>
+                    <h3 class="display-3 text-center"> HIRD isn’t just a drone. It’s a service.</h3>
+                    <div class="space40"></div>
                     <div class="row text-center">
-                        <div class="col-md-3">
-                            <h3 data-days>0</h3>
-                            <p class="mb-0">days</p>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="box bg-white shadow shadow-hover">
+                                <div class="icon icon-svg mb-20"><img src="style/images/icons/hs-24-hours-1.png"
+                                                                      alt=""/></div>
+                                <h5>24/7 Support</h5>
+                            </div>
+                            <!--/.box -->
                         </div>
                         <!--/column -->
-                        <div class="col-md-3">
-                            <h3 data-hours>0</h3>
-                            <p class="mb-0">hours</p>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="box bg-white shadow shadow-hover">
+                                <div class="icon icon-svg mb-20"><img src="style/images/icons/icons8-battery-64.png"
+                                                                      alt=""/></div>
+                                <h5>Self Charging</h5>
+                            </div>
+                            <!--/.box -->
                         </div>
                         <!--/column -->
-                        <div class="col-md-3">
-                            <h3 data-minutes>0</h3>
-                            <p class="mb-0">minutes</p>
+                        <div class="space30 d-none d-md-block d-lg-none"></div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="box bg-white shadow shadow-hover">
+                                <div class="icon icon-svg mb-20"><img src="style/images/icons/of-devices.png"
+                                                                      alt=""/></div>
+                                <h5>Daily Updates</h5>
+                            </div>
+                            <!--/.box -->
                         </div>
                         <!--/column -->
-                        <div class="col-md-3">
-                            <h3 data-seconds>0</h3>
-                            <p class="mb-0">seconds</p>
+                        <div class="space30 d-none d-lg-block"></div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="box bg-white shadow shadow-hover">
+                                <div class="icon icon-svg mb-20"><img src="style/images/icons/co-location.png" alt=""/>
+                                </div>
+                                <h5>Pre-planned Flight Path </h5>
+                            </div>
+                            <!--/.box -->
+                        </div>
+                        <!--/column -->
+                        <div class="space30 d-none d-md-block d-lg-none"></div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="box bg-white shadow shadow-hover">
+                                <div class="icon icon-svg mb-20"><img src="style/images/icons/de-wrenches.png" alt=""/>
+                                </div>
+                                <h5>Idk what to put here</h5>
+                            </div>
+                            <!--/.box -->
+                        </div>
+                        <!--/column -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="box bg-white shadow shadow-hover">
+                                <div class="icon icon-svg mb-20"><img src="style/images/icons/of-clipboard.png"
+                                                                      alt=""/></div>
+                                <h5>Saves Time</h5>
+                            </div>
+                            <!--/.box -->
                         </div>
                         <!--/column -->
                     </div>
-                    <!-- /.row -->
+                    <!-- /.container -->
+                    <div class="divider">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-opacity-default" preserveAspectRatio="none"
+                             viewBox="0 0 1070 53.23">
+                            <path d="M0,11.23s114,42,335,22,272-44,416-28,319,37,319,37v11H0Z"/>
+                        </svg>
+                    </div>
                 </div>
-                <!--/.countdown -->
             </div>
-            <!-- /column -->
+            <section id="contact">
+                <div class="wrapper light-wrapper">
+                    <div class="container inner">
+                        <h2 class="section-title">Get in Touch</h2>
+                        <p class="lead larger">Have any questions? Reach out to us from our contact form and we will get
+                            back to you shortly.</p>
+                        <div class="space40"></div>
+                        <div class="row">
+                            <div class="col-lg-7 order-lg-2 offset-lg-1">
+                                <form id="contact-form" class="fields-white" method="post" action="contact/contact.php">
+                                    <div class="messages"></div>
+                                    <div class="controls">
+                                        <div class="form-row">
+                                            <div class="col-lg-12 col-xl-6">
+                                                <div class="form-group">
+                                                    <input id="form_name" type="text" name="name" class="form-control"
+                                                           placeholder="First Name *" required="required"
+                                                           data-error="First Name is required.">
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 col-xl-6">
+                                                <div class="form-group">
+                                                    <input id="form_lastname" type="text" name="surname"
+                                                           class="form-control" placeholder="Last Name *"
+                                                           required="required" data-error="Last Name is required.">
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col-lg-12 col-xl-6">
+                                                <div class="form-group">
+                                                    <input id="form_email" type="email" name="email"
+                                                           class="form-control" placeholder="Email *"
+                                                           required="required" data-error="Valid email is required.">
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 col-xl-6">
+                                                <div class="form-group">
+                                                    <input id="form_phone" type="tel" name="phone" class="form-control"
+                                                           placeholder="Phone">
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <textarea id="form_message" name="message" class="form-control"
+                                                              placeholder="Message *" rows="4" required="required"
+                                                              data-error="Message is required."></textarea>
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <input type="submit" class="btn btn-send" value="Send message">
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col-md-12">
+                                                <p class="text-muted"><strong>*</strong> These fields are required.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                                <!-- /form -->
+                            </div>
+                            <!--/column -->
+                            <div class="space30 d-none d-md-block d-lg-none"></div>
+                            <div class="col-lg-4">
+                            </div>
+                            <div class="d-flex flex-row">
+
+                                <div class="icon color-default fs-34 mr-25"><i class="icofont-telephone"></i></div>
+
+                                <div>
+                                    <h6 class="mb-5">Phone</h6>
+                                    <p>01 (404) 229 1445‬ <br class="d-none d-md-block"/>01 (912) 429 5649‬</p>
+                                </div>
+                            </div>
+                            <div class="space30 d-none d-md-block d-lg-none"></div>
+                            <div class="d-flex flex-row">
+                                <div>
+                                    <div class="icon color-default fs-34 mr-25"><i class="icofont-mail-box"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h6 class="mb-5">E-mail</h6>
+                                    <p><a href="mailto:hird.llc@gmail.com" class="nocolor">hird.llc@gmail.com</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/column -->
+                    </div>
+                    <!--/.row -->
+                </div>
+                <!-- /.container -->
         </div>
-        <!-- /.row -->
+        <!-- /.wrapper -->
+        </section>
+        <div class="space60"></div>
+        <div class="divider">
+            <svg xmlns="http://www.w3.org/2000/svg" class="fill-opacity-default" preserveAspectRatio="none"
+                 viewBox="0 0 1070 53.23">
+                <path d="M0,11.23s114,42,335,22,272-44,416-28,319,37,319,37v11H0Z"/>
+            </svg>
+        </div>
+        <footer class="bg-opacity-default text-center">
+            <!--      <footer class="dark-wrapper inverse-text text-center">-->
+            <div class="container inner pt-80 pb-80">
+                <div class="widget"><img src="#"
+                                         srcset="style/images/logo-light.png 1x, style/images/logo-light@2x.png 2x"
+                                         alt=""/>
+                    <div class="space30"></div>
+                    <p>© 2020 HIRD. All rights reserved.</p>
+                    <div class="space10"></div>
+                    <ul class="social social-mute social-s ml-auto">
+                        <li><a href="#"><i class="jam jam-linkedin"></i></a></li>
+                    </ul>
+                </div>
+                <!-- /.widget -->
+            </div>
+            <!-- /.container -->
+        </footer>
     </div>
-    <!-- /.container -->
-    <div class="container inner pt-80 pb-40">
-        <p>© 2020 HIRD. All rights reserved.</p>
-        <ul class="social social-mute social-s">
-            <li><a href="#"><i class="jam jam-twitter"></i></a></li>
-            <li><a href="#"><i class="jam jam-facebook"></i></a></li>
-            <li><a href="#"><i class="jam jam-instagram"></i></a></li>
-            <li><a href="#"><i class="jam jam-vimeo"></i></a></li>
-            <li><a href="#"><i class="jam jam-youtube"></i></a></li>
-        </ul>
-    </div>
-    <!-- /.container -->
-</div>
-<!-- /.content-wrapper -->
-<script src="style/js/jquery.min.js"></script>
-<script src="style/js/popper.min.js"></script>
-<script src="style/js/bootstrap.min.js"></script>
-<script src="style/revolution/js/jquery.themepunch.tools.min.js"></script>
-<script src="style/revolution/js/jquery.themepunch.revolution.min.js"></script>
-<script src="style/revolution/js/extensions/revolution.extension.actions.min.js"></script>
-<script src="style/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-<script src="style/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-<script src="style/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-<script src="style/revolution/js/extensions/revolution.extension.migration.min.js"></script>
-<script src="style/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-<script src="style/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-<script src="style/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-<script src="style/revolution/js/extensions/revolution.extension.video.min.js"></script>
-<script src="style/js/plugins.js"></script>
-<script src="style/js/scripts.js"></script>
+    <!-- /.content-wrapper -->
+    <script src="style/js/jquery.min.js"></script>
+    <script src="style/js/popper.min.js"></script>
+    <script src="style/js/bootstrap.min.js"></script>
+    <script src="style/revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script src="style/revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="style/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+    <script src="style/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script src="style/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="style/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="style/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+    <script src="style/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="style/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script src="style/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="style/revolution/js/extensions/revolution.extension.video.min.js"></script>
+    <script src="style/js/plugins.js"></script>
+    <script src="style/js/scripts.js"></script>
 </body>
 </html>
+<!--<!DOCTYPE html>-->
+<!--<html lang="en" class="h-100">-->
+<!--<head>-->
+<!--    <meta charset="utf-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <link rel="shortcut icon" href="style/images/favicon.png">-->
+<!--    <title>HIRD</title>-->
+<!--    <link rel="stylesheet" type="text/css" href="style/css/bootstrap.min.css">-->
+<!--    <link rel="stylesheet" type="text/css" href="style/css/plugins.css">-->
+<!--    <link rel="stylesheet" type="text/css" href="style/revolution/css/settings.css">-->
+<!--    <link rel="stylesheet" type="text/css" href="style/revolution/css/layers.css">-->
+<!--    <link rel="stylesheet" type="text/css" href="style/revolution/css/navigation.css">-->
+<!--    <link rel="stylesheet" type="text/css" href="style/type/type.css">-->
+<!--    <link rel="stylesheet" type="text/css" href="style.css">-->
+<!--    <link rel="stylesheet" type="text/css" href="style/css/color/leaf.css">-->
+<!--    <link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i,600,600i,700,700i&display=swap"-->
+<!--          rel="stylesheet">-->
+<!--    <link rel="stylesheet" type="text/css" href="style/css/font/font2.css">-->
+<!--</head>-->
+<!--<body class="wrapper image-wrapper bg-image no-overlay h-100" data-image-src="style/images/art/cowbackground.jpg">-->
+<!--<div class="content-wrapper inverse-text text-center d-flex flex-column justify-content-between h-100">-->
+<!--    <div class="container inner pt-40 pb-80">-->
+<!--        <div class="logo"><a href="index.html"><img src="#"-->
+<!--                                                    srcset="style/images/logo-light.png 1x, style/images/logo-light@2x.png 2x"jsb-->
+<!--                                                    alt=""/></a></div>-->
+<!--    </div>-->
+<!--    &lt;!&ndash; /.container &ndash;&gt;-->
+<!--    <div class="container">-->
+<!--        <h1 class="hero mb-40">We'll be back shortly!</h1>-->
+<!--        <p class="lead larger">Our website is under construction. Estimated Time Remaining:</p>-->
+<!--        <div class="space20"></div>-->
+<!--        <div class="row">-->
+<!--            <div class="col-md-8 offset-md-2">-->
+<!--                <div class="countdown" data-date="June 12 2020">-->
+<!--                    <div class="row text-center">-->
+<!--                        <div class="col-md-3">-->
+<!--                            <h3 data-days>0</h3>-->
+<!--                            <p class="mb-0">days</p>-->
+<!--                        </div>-->
+<!--                        &lt;!&ndash;/column &ndash;&gt;-->
+<!--                        <div class="col-md-3">-->
+<!--                            <h3 data-hours>0</h3>-->
+<!--                            <p class="mb-0">hours</p>-->
+<!--                        </div>-->
+<!--                        &lt;!&ndash;/column &ndash;&gt;-->
+<!--                        <div class="col-md-3">-->
+<!--                            <h3 data-minutes>0</h3>-->
+<!--                            <p class="mb-0">minutes</p>-->
+<!--                        </div>-->
+<!--                        &lt;!&ndash;/column &ndash;&gt;-->
+<!--                        <div class="col-md-3">-->
+<!--                            <h3 data-seconds>0</h3>-->
+<!--                            <p class="mb-0">seconds</p>-->
+<!--                        </div>-->
+<!--                        &lt;!&ndash;/column &ndash;&gt;-->
+<!--                    </div>-->
+<!--                    &lt;!&ndash; /.row &ndash;&gt;-->
+<!--                </div>-->
+<!--                &lt;!&ndash;/.countdown &ndash;&gt;-->
+<!--            </div>-->
+<!--            &lt;!&ndash; /column &ndash;&gt;-->
+<!--        </div>-->
+<!--        &lt;!&ndash; /.row &ndash;&gt;-->
+<!--    </div>-->
+<!--    &lt;!&ndash; /.container &ndash;&gt;-->
+<!--    <div class="container inner pt-80 pb-40">-->
+<!--        <p>© 2020 HIRD. All rights reserved.</p>-->
+<!--        <ul class="social social-mute social-s">-->
+<!--            <li><a href="#"><i class="jam jam-twitter"></i></a></li>-->
+<!--            <li><a href="#"><i class="jam jam-facebook"></i></a></li>-->
+<!--            <li><a href="#"><i class="jam jam-instagram"></i></a></li>-->
+<!--            <li><a href="#"><i class="jam jam-vimeo"></i></a></li>-->
+<!--            <li><a href="#"><i class="jam jam-youtube"></i></a></li>-->
+<!--        </ul>-->
+<!--    </div>-->
+<!--    &lt;!&ndash; /.container &ndash;&gt;-->
+<!--</div>-->
+<!--&lt;!&ndash; /.content-wrapper &ndash;&gt;-->
+<!--<script src="style/js/jquery.min.js"></script>-->
+<!--<script src="style/js/popper.min.js"></script>-->
+<!--<script src="style/js/bootstrap.min.js"></script>-->
+<!--<script src="style/revolution/js/jquery.themepunch.tools.min.js"></script>-->
+<!--<script src="style/revolution/js/jquery.themepunch.revolution.min.js"></script>-->
+<!--<script src="style/revolution/js/extensions/revolution.extension.actions.min.js"></script>-->
+<!--<script src="style/revolution/js/extensions/revolution.extension.carousel.min.js"></script>-->
+<!--<script src="style/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>-->
+<!--<script src="style/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>-->
+<!--<script src="style/revolution/js/extensions/revolution.extension.migration.min.js"></script>-->
+<!--<script src="style/revolution/js/extensions/revolution.extension.navigation.min.js"></script>-->
+<!--<script src="style/revolution/js/extensions/revolution.extension.parallax.min.js"></script>-->
+<!--<script src="style/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>-->
+<!--<script src="style/revolution/js/extensions/revolution.extension.video.min.js"></script>-->
+<!--<script src="style/js/plugins.js"></script>-->
+<!--<script src="style/js/scripts.js"></script>-->
+<!--</body>-->
+<!--</html>-->
