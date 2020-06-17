@@ -52,11 +52,12 @@ try
     }
     $emailTextHtml .= "</table>";
     
-    $mail = new PHPMailer;
+    $mail = new PHPMailer(true);
     
     $mail->setFrom($fromEmail, $fromName);
     $mail->addAddress($sendToEmail, $sendToName); // you can add more addresses by simply adding another line with $mail->addAddress();
     $mail->addReplyTo($from);
+
     
     $mail->isHTML(true);
     
