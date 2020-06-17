@@ -10,15 +10,15 @@ require 'PHPMailer-master/PHPMailerAutoload.php';
 */
 
 // an email address that will be in the From field of the email.
-$fromEmail = 'your-email@domain.com';
-$fromName = 'Snowlake Contact Form';
+$fromEmail = 'hird.llc@gmail.com';
+$fromName = 'HIRD Contact Form';
 
 // an email address that will receive the email with the output of the form
-$sendToEmail = 'your-email@domain.com';
-$sendToName = 'Snowlake Contact Form';
+$sendToEmail = 'hird.llc@gmail.com';
+$sendToName = 'HIRD Contact Form';
 
 // subject of the email
-$subject = 'New message from Snowlake contact form';
+$subject = 'New message from HIRD contact form';
 
 // form field names and their translations.
 // array variable name => Text to appear in the email
